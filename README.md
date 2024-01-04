@@ -1,5 +1,7 @@
 # Traducción de example.html
 
+En la línea de código de este archivo HTML hay un script el cual carga traducciones desde un archivo JSON, obtiene el idioma del navegador del visitante y de ser necesario traduce un elemento por su identificador al inglés. Entiense que el sitio web es en español.
+
 Si deseas agregar elementos a traducir estos serian los pasos:
 
 1. **HTML**
@@ -37,3 +39,6 @@ Si necesitas traducir un volumen palabras de tu pequeño proyecto web, sería vi
 Para este ejemplo se ha agregado el `atributo` **data-translation-key** a cada elemento a traducir. Este `atributo` contiene la clave de traducción correspondiente en tu archivo JSON,  la clave que asignas al `atributo` **data-translation-key** en tu HTML debe coincidir con la clave que utilizas en tu archivo JSON para la traducción correspondiente. La función **translateElementById** busca este `atributo` y traduce el elemento según la clave correspondiente. Puedes agregar este `atributo` a cualquier elemento que desees traducir en tu página.
 
 Esto facilitará la gestión y expansión de traducciones a medida que añadas más contenido a tu sitio web. Asegúrate de ajustar las claves en tu archivo JSON y los `atributos` **data-translation-key** en tu HTML.
+
+
+>Todo fue generado a partir de peticiones hechas a ChatGPT en su versión `ChatGPT 3.5`
