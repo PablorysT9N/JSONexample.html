@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <script>
+        // Función para cargar traducciones desde un archivo JSON
+        function loadTranslations() {
+            // Ruta al archivo JSON con las traducciones
+            var jsonPath = 'translations.json'; // Ruta relativa al directorio actual
+
+            // Realiza una solicitud para cargar el archivo JSON
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', jsonPath, true);
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        // Parsea el contenido JSON
+                        var translations = JSON.parse(xhr.responseText);
+
+                        // Obtiene el idioma del navegador
+                        var userLanguage = (navigator.language || navigator.userLanguage).toLowerCase();
+
+                        // Traduce elementos por identificador
+                        translateElementById('saludo', translations, userLanguage);
+                        translateElementById('parrafoEjemplo', translations, userLanguage);
+                        translateElementById('encabezadoEjemplo', translations, userLanguage);
+                        translateElementById('listaItem1', translations, userLanguage);
+                        translateElementById('listaItem2', translations, userLanguage);
+                    } else {
+                        console.error('Error al cargar el archivo JSON');
+                    }
+                }
+            };
+            xhr.send();
+        }
+
+        // Función para traducir un elemento por su identificador
+        function translateElementById(elementId, translations, userLanguage) {
+            var element = document.getElementById(elementId);
+            if (element) {
+                var translationKey = element.getAttribute('data-translation-key');
+                if (userLanguage.includes('en') && translationKey && translations.en[translationKey]) {
+                    element.innerText = translations.en[translationKey];
+                } else {
+                    // El idioma es español o cualquier otro, muestra el contenido por defecto
+                    element.innerText = translations.es[translationKey] || element.innerText;
+                }
+            }
+        }
+
+        // Llama a las funciones cuando se carga la página
+        window.onload = function () {
+            loadTranslations();
+        };
+    </script>
+</head>
+<body>
+    <!-- Contenido de tu sitio web aquí -->
+    <h2 id="saludo" data-translation-key="saludo">Hola</h2>
+    <p id="parrafoEjemplo" data-translation-key="paragraph">Este es un párrafo</p>
+    <h3 id="encabezadoEjemplo" data-translation-key="heading3">Este es un encabezado h3</h3>
+    <ul>
+        <li id="listaItem1" data-translation-key="listItem">Elemento de lista 1</li>
+        <li id="listaItem2" data-translation-key="listItem">Elemento de lista 2</li>
+    </ul>
+</body>
+</html>
