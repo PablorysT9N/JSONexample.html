@@ -36,11 +36,17 @@ Agrega la nueva clave y su traducción al archivo JSON.
 Al seguir estos pasos, te aseguras de que los nuevos elementos se gestionen adecuadamente en la traducción, y puedes mantener un flujo de trabajo escalable a medida que agregas más contenido a tu sitio web. Recuerda mantener la coherencia entre los atributos en el JSON y los atributos **data-translation-key** en tu HTML.
 
 
-
-
 Para este ejemplo se ha agregado el `atributo` **data-translation-key** a cada elemento a traducir. Este `atributo` contiene la clave de traducción correspondiente en tu archivo JSON,  la clave que asignas al `atributo` **data-translation-key** en tu HTML debe coincidir con la clave que utilizas en tu archivo JSON para la traducción correspondiente. La función **translateElementById** busca este `atributo` y traduce el elemento según la clave correspondiente. Puedes agregar este `atributo` a cualquier elemento que desees traducir en tu página.
 
 Esto facilitará la gestión y expansión de traducciones a medida que añadas más contenido a tu sitio web. Asegúrate de ajustar las claves en tu archivo JSON y los `atributos` **data-translation-key** en tu HTML.
+
+
+
+
+> [!TIP]
+> Atajo para duplicar una línea en Visual Studio Code.
+> `CAMBIO` + `ALT` + `↓`
+
 
 
 >Todo fue generado a partir de peticiones hechas a ChatGPT en su versión `ChatGPT 3.5`
