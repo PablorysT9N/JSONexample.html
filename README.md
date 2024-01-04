@@ -31,7 +31,7 @@ Agrega la nueva clave y su traducción al archivo JSON.
 }
 
 ```
-Al seguir estos pasos, te aseguras de que los nuevos elementos se gestionen adecuadamente en la traducción, y puedes mantener un flujo de trabajo escalable a medida que agregas más contenido a tu sitio web. Recuerda mantener la coherencia entre las atributo en el JSON y los `atributos` **data-translation-key** en tu HTML.
+Al seguir estos pasos, te aseguras de que los nuevos elementos se gestionen adecuadamente en la traducción, y puedes mantener un flujo de trabajo escalable a medida que agregas más contenido a tu sitio web. Recuerda mantener la coherencia entre los atributos en el JSON y los atributos **data-translation-key** en tu HTML.
 
 
 Si necesitas traducir un volumen palabras de tu pequeño proyecto web, sería viable utilizar un enfoque dinámico y escalable. Podrías asignar identificadores únicos a cada elemento que desees traducir y luego usar estos identificadores para buscar las traducciones correspondientes en un archivo de extensión JSON.
