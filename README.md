@@ -2,6 +2,8 @@
 
 En la línea de código de este archivo HTML hay un script el cual carga traducciones desde un archivo JSON, obtiene el idioma del navegador del visitante y de ser necesario traduce un elemento por su identificador al inglés. Entiense que el sitio web es en español.
 
+Si necesitas traducir un volumen de palabras de tu pequeño proyecto web, sería viable utilizar un enfoque dinámico y escalable. Podrías asignar identificadores únicos a cada elemento que desees traducir y luego usar estos identificadores para buscar las traducciones correspondientes en un archivo de extensión JSON.
+
 Si deseas agregar elementos a traducir estos serian los pasos:
 
 1. **HTML**
@@ -34,7 +36,7 @@ Agrega la nueva clave y su traducción al archivo JSON.
 Al seguir estos pasos, te aseguras de que los nuevos elementos se gestionen adecuadamente en la traducción, y puedes mantener un flujo de trabajo escalable a medida que agregas más contenido a tu sitio web. Recuerda mantener la coherencia entre los atributos en el JSON y los atributos **data-translation-key** en tu HTML.
 
 
-Si necesitas traducir un volumen palabras de tu pequeño proyecto web, sería viable utilizar un enfoque dinámico y escalable. Podrías asignar identificadores únicos a cada elemento que desees traducir y luego usar estos identificadores para buscar las traducciones correspondientes en un archivo de extensión JSON.
+
 
 Para este ejemplo se ha agregado el `atributo` **data-translation-key** a cada elemento a traducir. Este `atributo` contiene la clave de traducción correspondiente en tu archivo JSON,  la clave que asignas al `atributo` **data-translation-key** en tu HTML debe coincidir con la clave que utilizas en tu archivo JSON para la traducción correspondiente. La función **translateElementById** busca este `atributo` y traduce el elemento según la clave correspondiente. Puedes agregar este `atributo` a cualquier elemento que desees traducir en tu página.
 
