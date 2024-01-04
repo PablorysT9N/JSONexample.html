@@ -1,0 +1,18 @@
+{
+  "es": {
+    "saludo": "Hola",
+    "parrafoEjemplo" : "Este es un párrafo",
+    "encabezadoEjemplo" : "Este es un encabezado h3",
+    "listaItem1" : "Elemento de lista 1",
+    "listaItem2" : "Elemento de lista 2"
+    
+  },
+  "en": {
+    "saludo": "Hello",
+    "parrafoEjemplo" : "This is a paragraph",
+    "encabezadoEjemplo" : "This is a heading  h3",
+    "listaItem1" : "List element 1",
+    "listaItem2" : "List element 2"
+    
+  }
+}
