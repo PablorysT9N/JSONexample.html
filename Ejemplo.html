@@ -53,6 +53,10 @@
         // Llama a las funciones cuando se carga la página
         window.onload = function () {
             loadTranslations();
+            
+        // Llama a loadTranslations también al hacer scroll para traducir nuevos elementos
+            window.addEventListener('scroll', loadTranslations);
+            
         };
     </script>
 </head>
