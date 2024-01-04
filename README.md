@@ -45,8 +45,9 @@ Esto facilitará la gestión y expansión de traducciones a medida que añadas m
 
 > [!TIP]
 > Atajo para duplicar una línea en Visual Studio Code.
+>
 > `CAMBIO` + `ALT` + `↓`
 
 
-
+#
 >Todo fue generado a partir de peticiones hechas a ChatGPT en su versión `ChatGPT 3.5`
